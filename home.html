@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+    <section class="container mb-5">
+        <h1 class="text-center mt-5">Let's We Make <span class="text-danger">Money!!</span></h1>
+    </section>
+    <!-- balance section -->
+    <section>
+        <div class="container overflow-hidden">
+            <div class="row gx-5">
+                <div class="col">
+                    <div class="p-3 rounded bg-info text text-white">
+                        <h3>Deposit</h3>
+                        <h1>$<span id="deposit-balance">00</span></h1>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="p-3 rounded bg-warning text text-white">
+                        <h3>Withdraw</h3>
+                        <h1>$<span id="withdraw-balance">00</span></h1>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="p-3 rounded bg-success text text-white">
+                        <h3>Balance</h3>
+                        <h1>$<span id="total-balance">1500</span></h1>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- deposit and withdraw section -->
+    <section class="mt-5 container">
+        <div class="row gx-5">
+            <div class="col">
+                <div class="p-3 border rounded " style="background-color: rgb(176 233 245);">
+                    <h3 class="mb-4">please Deposit</h3>
+                    <input id="diposit-amount" class="d-block w-75 p-2 mb-3 rounded" type="text"
+                        placeholder="$ Deposti your money">
+                    <button id="deposit-btn"
+                        class="bg-info px-3 py-2 border-0 rounded text-white fw-bolder fs-4">Deposit</button>
+                </div>
+            </div>
+            <div class="col">
+                <div class="p-3 border rounded" style="background-color: rgb(255 193 7 / 39%);">
+                    <h3 class="mb-4">please withdraw</h3>
+                    <input id="withdraw-amount" class="d-block w-75 p-2 mb-3 rounded" type="text"
+                        placeholder="$ Withdraw your money">
+                    <button id="withdraw-btn"
+                        class="bg-warning px-3 py-2 border-0 rounded text-white fw-bolder fs-4">Withdraw</button>
+                </div>
+            </div>
+        </div>
+        <script src="js/home.js"></script>
+    </section>
+
+</body>
+
+</html>
